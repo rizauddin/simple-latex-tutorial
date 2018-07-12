@@ -1,0 +1,30 @@
+\documentclass{article}
+
+\begin{document}
+Table~{\ref{tab:ngdata}} shows how to have headings
+that don't span all of the columns.
+\begin{table}[ht!]
+\begin{center}
+\begin{tabular}{|c|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1.5cm}|} \hline
+&\multicolumn{5}{|c|}{Times (seconds)} \\ \cline{2-6}
+&\multicolumn{4}{|c|}{Ball one}& Ball two \\ \cline{2-5}
+&\multicolumn{4}{|c|}{Technique} &\\ \cline{2-5}
+$i$ & $g_A$  & $g_B$ & $d_A$ & $d_B$ & \\ \hline \hline
+1 & & & & &   \\
+2 & & & & &   \\
+3 & & & & &   \\
+4 & & & & &   \\
+5 & & & & &   \\
+\hline \hline
+
+average& & & & &  \\
+\hline
+$g$ & & & & &  \\
+\hline
+\end{tabular}
+\end{center}
+\caption {Timing data}
+\label{tab:ngdata}
+\end{table}
+
+\end{document}
